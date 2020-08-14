@@ -48,6 +48,92 @@
             }
           }
         ]
+      },
+      "cc.BoxCollider": {
+        "offset": [
+          {
+            "frame": 0,
+            "value": {
+              "__type__": "cc.Vec2",
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__type__": "cc.Vec2",
+              "x": -0.1,
+              "y": 0.7
+            }
+          },
+          {
+            "frame": 0.6,
+            "value": {
+              "__type__": "cc.Vec2",
+              "x": -5.6,
+              "y": -2.7
+            }
+          },
+          {
+            "frame": 0.8,
+            "value": {
+              "__type__": "cc.Vec2",
+              "x": -7.9,
+              "y": 1
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__type__": "cc.Vec2",
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "size": [
+          {
+            "frame": 0,
+            "value": {
+              "__type__": "cc.Size",
+              "width": 0,
+              "height": 0
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__type__": "cc.Size",
+              "width": 48.1,
+              "height": 21.6
+            }
+          },
+          {
+            "frame": 0.6,
+            "value": {
+              "__type__": "cc.Size",
+              "width": 20,
+              "height": 10.4
+            }
+          },
+          {
+            "frame": 0.8,
+            "value": {
+              "__type__": "cc.Size",
+              "width": 18.5,
+              "height": 8.5
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__type__": "cc.Size",
+              "width": 0,
+              "height": 0
+            }
+          }
+        ]
       }
     }
   },

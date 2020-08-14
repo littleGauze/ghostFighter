@@ -120,6 +120,60 @@
             }
           }
         ]
+      },
+      "cc.BoxCollider": {
+        "offset": [
+          {
+            "frame": 0.875,
+            "value": {
+              "__type__": "cc.Vec2",
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__type__": "cc.Vec2",
+              "x": 3.4,
+              "y": 0.1
+            }
+          },
+          {
+            "frame": 1.125,
+            "value": {
+              "__type__": "cc.Vec2",
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "size": [
+          {
+            "frame": 0.875,
+            "value": {
+              "__type__": "cc.Size",
+              "width": 0,
+              "height": 0
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__type__": "cc.Size",
+              "width": 33.3,
+              "height": 36.1
+            }
+          },
+          {
+            "frame": 1.125,
+            "value": {
+              "__type__": "cc.Size",
+              "width": 0,
+              "height": 0
+            }
+          }
+        ]
       }
     }
   },

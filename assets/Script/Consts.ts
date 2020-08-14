@@ -1,7 +1,9 @@
 export enum State {
   Stand = 1,
   Walk,
-  Attack
+  Attack,
+  Hurt,
+  Dead
 }
 
 export enum Direction {
@@ -13,13 +15,16 @@ export enum Direction {
 export interface CParams {
   speed?: number,
   anim: cc.Animation,
-  rgd: cc.RigidBody
+  rgd: cc.RigidBody,
+  hp: number
 }
 
 export enum Action {
   Stand = 'idle',
   Walk = 'walk',
-  Attack = 'attack1',
+  Hurt = 'hurt',
+  Dead = 'dead',
+  Attack = 'attack',
   Attack2 = 'attack2',
   Attack3 = 'attack3'
 }

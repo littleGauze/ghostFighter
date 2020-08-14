@@ -11,12 +11,14 @@
     [
       false,
       false,
+      false,
+      true,
       false
     ],
     [
       false,
       false,
-      false,
+      true,
       false
     ],
     [
@@ -52,7 +54,7 @@
     "height": 640,
     "width": 960
   },
-  "last-module-event-record-time": 0,
+  "last-module-event-record-time": 1597384510648,
   "assets-sort-type": "name",
   "facebook": {
     "appID": "",

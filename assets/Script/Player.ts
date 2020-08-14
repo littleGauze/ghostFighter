@@ -5,6 +5,9 @@ import { State, Action } from './Consts'
 @ccclass
 export default class Player extends Character {
 
+  @property(cc.Label)
+  hpLabel: cc.Label = null
+
   private anim: cc.Animation = null
   private rgd: cc.RigidBody = null
   private _comb: number = 0
@@ -20,12 +23,12 @@ export default class Player extends Character {
     this.anim = this.node.getComponentInChildren(cc.Animation)
   }
 
-
   start() {
     super.init({
       speed: 200,
       anim: this.anim,
-      rgd: this.rgd
+      rgd: this.rgd,
+      hp: 10
     });
   }
 
@@ -58,11 +61,24 @@ export default class Player extends Character {
     }
   }
 
+  onCollisionEnter(other: cc.BoxCollider, self: cc.BoxCollider): void {
+    console.log('come in..........')
+    console.log(other, self)
+  }
+
   public attack(): void {
     this.setState(State.Attack)
   }
 
+  public demage(d: number): void {
+    super.demage(d)
+    if (this.isDead) {
+      cc.director.loadScene('game')
+    }
+  }
+
   public update(dt: number): void {
+    if (this.isDead) return
     if (this.state === State.Stand) {
       if (this._combTimer < this._combInterval) {
         this._combTimer += dt
